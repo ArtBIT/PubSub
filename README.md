@@ -3,8 +3,13 @@
 
 PubSub design pattern implemented in PHP
 
-# Usage
+# Example Usage
 ```php
+<?php
+
+require_once(__DIR__ . '/src/pubsub.php');
+use \artbit\PubSub;
+
 // Subscribe to an event:
 PubSub::subscribe("my.event", function($eventname, $payload) {
     print_r(func_get_args());
