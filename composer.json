@@ -1,0 +1,17 @@
+{
+    "name": "artbit/pubsub",
+    "description": "PubSub design pattern implemented in PHP",
+    "type": "library",
+    "keywords": ["pubsub", "events" ],
+    "license": "MIT",
+    "homepage": "https://github.com/artbit/PubSub",
+    "authors": [
+        {
+            "name": "Djordje Ungar",
+            "homepage": "http://djordjeungar.com"
+        }
+    ],
+    "autoload": {
+        "files": ["src/pubsub.php"]
+    }
+}
