@@ -1,6 +1,7 @@
 <?php
 
 namespace artbit;
+require_once 'PHPUnit/Autoload.php';
 require_once __DIR__ . '/../src/pubsub.php';
 
 /**
