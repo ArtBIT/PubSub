@@ -4,17 +4,27 @@
 PubSub design pattern implemented in PHP
 
 # Usage
-Subscribe to an event:
 ```php
+// Subscribe to an event:
 PubSub::subscribe("my.event", function($eventname, $payload) {
     print_r(func_get_args());
 });
-```
 
-Trigger an event:
-```php
+// Trigger an event:
 PubSub::publish("my.event", ["type" => "sometype", "value" => "somevalue"]);
+
 // This should result in
+// Array
+// (
+//     [0] => my.event
+//     [1] => Array
+//         (
+//             [type] => sometype
+//             [value] => somevalue
+//         )
+// 
+// )
+// 
 ```
 
 # License
